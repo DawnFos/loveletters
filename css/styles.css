@@ -1,34 +1,58 @@
-body {
-    font-family: 'Open Sans', sans-serif;
+body, html {
+    height: 100%;
+}
+.bg {
+    /* The image used */
+    background-image: url("/img/parchmentD.png");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-h1, h2, h3, h6 {
+body {
     font-family: 'Montserrat', sans-serif;
+    color: #E7CD9Bff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lekton', sans-serif;
+    color: #E7CD9Bff;
 }
 
 h2 {
-    color: #4e4e4e;
+    color: #B47729ff;
 }
 
 header h1 {
     font-family: 'Montserrat', sans-serif;
-    color: #3d3d3d;
+    color: #E7CD9Bff;
 }
 
 header h2 {
-    color: #4e4e4e;
+    color: #B47729ff;
 }
 
 footer {
-    background-image: linear-gradient(#CBB2FF, #f6f2ff);
+    background-image: linear-gradient(rgba(7, 18, 40, .01), rgba(67, 31, 53, 1));
     padding: 20px 0;
+}
+
+.softbox {
+    border-radius: 50px;
+    background: linear-gradient(145deg, #0b1936, #0d1e40);
+    box-shadow:  26px 26px 52px #0a1833,-26px -26px 52px #0e2045;
 }
 
 .jumbotron {
     margin: 0;
-    padding: 30px;
-    background-image: linear-gradient(to right, #CBB2FF, #d8c8fa, #f6f2ff);
-    color: white;
+    padding: 0px;
+    background-image: linear-gradient(to right, #071228ff,rgba(51, 38, 79, 1), rgba(67, 31, 53, 1);
+    color: #071228ff;
 }
 
 .row-content {
@@ -38,9 +62,15 @@ footer {
 }
 
 .navbar {
-    background-color: #f6f2ff;
+    background-color: #071228ff;
 }
 
 .customtheme {
-    background-color: #CBB2FF;
+    background-color: rgba(67, 31, 53, 1);
 }
+
+--bronze: #C2883Fff;
+--indian-yellow: #CC9649ff;
+--deep-champagne: #E7CD9Bff;
+--wheat: #ECD6A9ff;
+--copper: #B47729ff;
