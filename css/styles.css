@@ -1,17 +1,23 @@
 body, html {
     height: 100%;
+    margin: 0;
 }
 .bg {
-    /* The image used */
-    background-image: url("/img/parchmentD.png");
-
-    /* Full height */
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
+    background-image: url('../img/ink.jpeg');
     background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-color: rgb(34, 33, 32);
+}
+
+.entry {
+    background-image: url('../img/type.jpeg');
+    background-repeat: no-repeat;
+    /* cover???? */
     background-size: cover;
+    background-blend-mode: normal;
+    background-attachment: fixed;
+    background-color: rgb(34, 33, 32);
 }
 
 body {
@@ -38,14 +44,25 @@ header h2 {
 }
 
 footer {
-    background-image: linear-gradient(rgba(7, 18, 40, .01), rgba(67, 31, 53, 1));
+    background-image: linear-gradient(rgba(34, 33, 32, .5), rgba(7, 18, 40, 1));
+    background-color: rgb(34, 33, 32);
     padding: 20px 0;
+}
+
+.footertwo {
+    background-color: rgba(7, 18, 40, 1);
 }
 
 .softbox {
     border-radius: 50px;
     background: linear-gradient(145deg, #0b1936, #0d1e40);
     box-shadow:  26px 26px 52px #0a1833,-26px -26px 52px #0e2045;
+}
+
+.softboxtwo {
+    border-radius: 50px;
+    background: linear-gradient(145deg,rgba(34, 33, 32, .2), rgba(7, 18, 40, .5));
+    box-shadow:  26px 26px 52px rgba(34, 33, 32, .2),-26px -26px 52px rgba(7, 18, 40, .5);
 }
 
 .jumbotron {
@@ -69,8 +86,13 @@ footer {
     background-color: rgba(67, 31, 53, 1);
 }
 
+.rouge {
+    color: #cc3333;
+}
+
 --bronze: #C2883Fff;
 --indian-yellow: #CC9649ff;
 --deep-champagne: #E7CD9Bff;
 --wheat: #ECD6A9ff;
 --copper: #B47729ff;
+
